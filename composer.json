@@ -13,6 +13,9 @@
         "inertiajs/inertia-laravel": "^2.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "open-cbs/accounts": "@dev",
+        "open-cbs/core": "@dev",
+        "open-cbs/person": "@dev",
         "tightenco/ziggy": "^2.4"
     },
     "require-dev": {
@@ -23,7 +26,9 @@
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
         "pestphp/pest": "^3.7",
-        "pestphp/pest-plugin-laravel": "^3.1"
+        "pestphp/pest-plugin-laravel": "^3.1",
+        "wovosoft/laravel-common": "^1.0",
+        "wovosoft/laravel-typescript": "^1.1"
     },
     "autoload": {
         "psr-4": {
@@ -78,5 +83,28 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "open-cbs/person": {
+            "type": "path",
+            "url": "./packages/open-cbs/person",
+            "options": {
+                "symlink": true
+            }
+        },
+        "open-cbs/core": {
+            "type": "path",
+            "url": "./packages/open-cbs/core",
+            "options": {
+                "symlink": true
+            }
+        },
+        "open-cbs/accounts": {
+            "type": "path",
+            "url": "./packages/open-cbs/accounts",
+            "options": {
+                "symlink": true
+            }
+        }
+    }
 }
