@@ -16,7 +16,8 @@
         "open-cbs/accounts": "@dev",
         "open-cbs/core": "@dev",
         "open-cbs/person": "@dev",
-        "tightenco/ziggy": "^2.4"
+        "tightenco/ziggy": "^2.4",
+        "wovosoft/bd-geocode": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -28,6 +29,7 @@
         "pestphp/pest": "^3.7",
         "pestphp/pest-plugin-laravel": "^3.1",
         "wovosoft/laravel-common": "^1.0",
+        "wovosoft/laravel-package-make-commands": "^0.0.1",
         "wovosoft/laravel-typescript": "^1.1"
     },
     "autoload": {
