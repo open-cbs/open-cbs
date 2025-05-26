@@ -1,0 +1,83 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+.fi-topbar, .fi-sidebar-header {
+    height: calc(var(--spacing) * 12);
+}
+
+.fi-ta-cell > .fi-ta-actions {
+    @apply gap-0;
+}
+
+.fi-ta-cell > .fi-ta-actions > .fi-ac-btn-action {
+    @apply rounded-none;
+}
+
+.fi-ta-cell:has(.fi-ta-actions) {
+    @apply pl-2;
+}
+
+.fi-ta-cell > .fi-ta-actions > .fi-ac-btn-action:first-child {
+    @apply rounded-l-md;
+}
+
+.fi-ta-cell > .fi-ta-actions > .fi-ac-btn-action:last-child {
+    @apply rounded-r-md;
+}
+
+.fi-ta-cell {
+    @apply py-0;
+}
+
+.fi-ta-cell .fi-ta-col > .fi-ta-text-item {
+    line-height: calc(var(--spacing) * 1);
+}
+
+.fi-ta-header-cell {
+    @apply py-2;
+}
+
+.fi-topbar-nav-groups {
+    @apply gap-0;
+}
+
+.pos_sale_discount_field_wrapper .fi-grid-col:last-child,
+.pos_sale_tax_field_wrapper .fi-grid-col:last-child {
+    margin-top: 35px;
+    margin-left: -22px;
+}
+
+/*.sale-item-input-group .fi-grid-col:first-child{*/
+/*    display: inline-block;*/
+/*    width: calc(100% - 60px);*/
+/*    float: left;*/
+/*}*/
+.sale-item-input-group .fi-grid-col:last-child {
+    margin-top: 35px;
+    margin-left: -22px;
+}
+
+
+.table-bordered {
+    @apply w-full table-auto;
+}
+
+.table-bordered,
+.table-bordered td,
+.table-bordered th {
+    @apply border border-gray-300;
+}
+
+.table-bordered td,
+.table-bordered th {
+    @apply px-2 py-1;
+}
+
+.fi-ta-table .fi-ta-text-has-badges,
+.fi-ta-table .fi-ta-icon {
+    @apply p-0;
+}
+
+
